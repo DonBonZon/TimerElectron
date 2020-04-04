@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>SimpleTimer</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+
+  <div class="container col-12">
+    <h1>Welcome to SimpleTimer</h1>
+
+    <form id="radioHolder" class="marginTopBot10">
+      <input type="radio" name="timerType" value="Timer" checked="checked" id="timerRadio">Timer
+      <span></span><span></span>
+      <input type="radio" name="timerType" value="Alarm" id="alarmRadio">Alarm
+    </form>
+
+    <div class="timerDiv">
+      <h2>Please enter time you want to countdown</h2>
+
+      <form class="form-inline justify-content-center mt-3">
+        <input type="text" id="timerHours" name="hours" placeholder="Hours" class="form-control textImput">
+        <input type="text" id="timerMinutes" name="minutes" placeholder="Minutes" class="form-control textImput">
+        <input type="text" id="timerSeconds" name="seconds" placeholder="Seconds" class="form-control textImput">
+      </form>
+      <button class="btn btn-outline-secondary col-4 mt-4" id="timerButton">START</button>
+      <h3 class="timerTime mt-4">00:00:00</h3>
+    </div>
+
+
+    <div class="alarmDiv">
+      <h2>Please enter time at which timer will go off</h2>
+
+      <form class="form-inline justify-content-center mt-3">
+        <input type="text" id="alarmHours" name="hours" placeholder="Hour" class="form-control textImput">
+        <input type="text" id="alarmMinutes" name="minutes" placeholder="Minutes" class="form-control textImput">
+      </form>
+      <button class="btn btn-outline-secondary col-4 mt-4" id="alarmButton">START</button>
+      <h3 class="alarmTime mt-4">00:00:00</h3>
+    </div>
+
+
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

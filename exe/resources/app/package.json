@@ -1,0 +1,17 @@
+{
+  "name": "electron_timer",
+  "version": "1.0.0",
+  "description": "Timer made using electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Electron",
+    "timer"
+  ],
+  "author": "DonBonZon",
+  "devDependencies": {
+    "electron": "^8.2.0"
+  }
+}
